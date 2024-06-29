@@ -1,15 +1,14 @@
-# @electron/universal
+# @pingleware-electron/universal
 
-> Create universal macOS Electron applications
+> Create universal macOS, windows and linux (snap) Electron applications
 
 [![CircleCI](https://circleci.com/gh/electron/universal/tree/main.svg?style=shield)](https://circleci.com/gh/electron/universal)
 [![NPM package](https://img.shields.io/npm/v/@electron/universal)](https://npm.im/@electron/universal)
 
-
 ## Usage
 
 ```typescript
-import { makeUniversalApp } from '@electron/universal';
+import { makeUniversalApp } from '@pingleware-electron/universal';
 
 await makeUniversalApp({
   x64AppPath: 'path/to/App_x64.app',
