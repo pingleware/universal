@@ -55,8 +55,9 @@ const dupedFiles = (files: AppFile[]) =>
 export const makeUniversalApp = async (opts: MakeUniversalOpts): Promise<void> => {
   d('making a universal app with options', opts);
 
-  if (process.platform !== 'darwin')
-    throw new Error('@electron/universal is only supported on darwin platforms');
+  // DISABLED macOS BUILD ONLY VERIFICATION!
+  //if (process.platform !== 'darwin')
+  //  throw new Error('@electron/universal is only supported on darwin platforms');
   if (!opts.x64AppPath || !path.isAbsolute(opts.x64AppPath))
     throw new Error('Expected opts.x64AppPath to be an absolute path but it was not');
   if (!opts.arm64AppPath || !path.isAbsolute(opts.arm64AppPath))
